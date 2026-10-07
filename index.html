@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+[10/7/2026 4:48 PM] Ziad 3ssa: <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,21 +38,11 @@
         /* Header / Hero */
         header {
             text-align: center;
-            padding: 40px 20px;
+            padding: 35px 20px;
             background: var(--card-bg);
             border-radius: 16px;
             border: 1px solid var(--gold-border);
             margin-bottom: 25px;
-        }
-
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid var(--accent-green);
-            margin-bottom: 15px;
-            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.2);
         }
 
         header h1 {
@@ -65,7 +55,30 @@
             font-size: 1.2rem;
             color: var(--accent-green);
             font-weight: 500;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+        }
+
+        /* Photo Card Section */
+        .photo-card {
+            background: var(--card-bg);
+            border: 1px solid var(--gold-border);
+            border-radius: 16px;
+            padding: 30px 20px;
+            margin-bottom: 25px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-img-standalone {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-green);
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+            display: block;
         }
 
         /* Card Section Component */
@@ -134,8 +147,7 @@
             left: 0;
             top: -2px;
         }
-
-        /* Grid for Skills */
+[10/7/2026 4:48 PM] Ziad 3ssa: /* Grid for Skills */
         .grid-2 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -150,7 +162,8 @@
             padding: 30px 20px;
             text-align: center;
         }
- .contact-box h3 {
+
+        .contact-box h3 {
             font-size: 1.5rem;
             margin-bottom: 10px;
         }
@@ -198,13 +211,17 @@
 
         <!-- Header -->
         <header>
-           <img src="ziad.jpg" alt="Zeyad Essa" style="width: 160px; height: 160px; min-width: 160px; min-height: 160px; border-radius: 50%; object-fit: cover; border: 3px solid #22c55e; margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto;">
             <h1>Zeyad Essa</h1>
             <h2>Full Stack Web Developer (.NET & React)</h2>
             <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">
                 Information Systems student passionate about building clean, responsive, scalable web interfaces and robust backend systems.
             </p>
         </header>
+
+        <!-- Standalone Profile Photo Section -->
+        <div class="photo-card">
+            <img src="ziad.jpg" alt="Zeyad Essa" class="profile-img-standalone">
+        </div>
 
         <!-- About Me -->
         <div class="card">
@@ -241,8 +258,7 @@
                         <li>Responsive Web Design</li>
                     </ul>
                 </div>
-
-                <div class="sub-card">
+[10/7/2026 4:48 PM] Ziad 3ssa: <div class="sub-card">
                     <h3>Backend & Core</h3>
                     <ul class="skills-list">
                         <li>C# & C# Advanced</li>
@@ -251,79 +267,8 @@
                         <li>RESTful Web APIs</li>
                     </ul>
                 </div>
- <div class="sub-card">
+
+                <div class="sub-card">
                     <h3>Database & Languages</h3>
                     <ul class="skills-list">
                         <li>SQL & Database Design</li>
-                        <li>Python Programming</li>
-                        <li>Data Structures & Algorithms</li>
-                    </ul>
-                </div>
-
-                <div class="sub-card">
-                    <h3>Tools & Version Control</h3>
-                    <ul class="skills-list">
-                        <li>Git & GitHub</li>
-                        <li>Visual Studio & VS Code</li>
-                        <li>OOP Principles & Patterns</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Experience & Training -->
-        <div class="card">
-            <h2 class="section-title">Experience & Training</h2>
-            
-            <div class="sub-card">
-                <h3>DEPI -- Full Stack .NET Track</h3>
-                <div class="subtitle">Digital Egypt Pioneers Initiative (In Progress)</div>
-                <p>Enrolled in hands-on intensive training for Full Stack .NET development in partnership with Plan B and instructor Abdelrahman Gamal, focusing on building enterprise-grade web applications.</p>
-            </div>
-
-            <div class="sub-card">
-                <h3>Self-Learning & Problem Solving</h3>
-                <div class="subtitle">Continuous Skill Building</div>
-                <p>Building practical applications with advanced C# concepts, Object-Oriented Programming (OOP), Data Structures, and SQL Databases.</p>
-            </div>
-        </div>
-
-        <!-- Projects -->
-        <div class="card">
-            <h2 class="section-title">Featured Projects</h2>
-            
-            <div class="sub-card">
-                <h3>Employee Management System (Console / OOP)</h3>
-                <div class="subtitle">C# Advanced Project</div>
-                <p>An interactive system utilizing OOP classes and advanced C# logic. Features an interactive menu loop allowing users to:</p>
-                <ul class="skills-list" style="margin-top: 8px;">
-                    <li>Add new employee records with validated inputs.</li>
-                    <li>Remove or update employee details.</li>
-                    <li>Display list of all employees.</li>
-                    <li>Calculate total payroll and system summary.</li>
-                </ul>
-                <p style="margin-top: 10px;"><strong>Built With:</strong> C# Advanced, OOP, Data Collections.</p>
-            </div>
-        </div>
-
-        <!-- Contact Box -->
-        <div class="contact-box">
-            <h3>Let's Build Something Great Together</h3>
-            <p style="color: var(--text-muted);">Have a project idea, an opportunity, or want to connect?</p>
-            
-            <div class="contact-links">
-                <a href="mailto:zeyadissa12@gmail.com" class="contact-icon" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/zeyad-essa-56b22a2b7" target="_blank" class="contact-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://wa.me/201147204535" target="_blank" class="contact-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://github.com/ziad959-essa" target="_blank" class="contact-icon" title="GitHub"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-
-        <footer>
-            <p>© 2026 Zeyad Essa. All Rights Reserved.</p>
-        </footer>
-
-    </div>
-
-</body>
-</html>
